@@ -47,13 +47,20 @@
             margin-bottom: 10px;
         }
         .read_more_btn{
-            height: 40px;
-            width: 9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            height: 30px;
+            width: 6rem;
             margin-top: 20px;
             background: transparent;
             // border-color: rgb(3, 3, 164);
             border-radius: 5px;
             font-size: medium;
+            color: blue;
+            font-weight: bold;
+            
             cursor: pointer;
             transition: all 0.5s ease;
             border: 2px solid blue;
