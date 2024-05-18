@@ -6,7 +6,7 @@ const Header = () => {
         <div className="dark_overlay"></div>
         <div className="info">
             <h1>Jano Baghel Khand</h1>
-            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quod itaque minima corporis?</h3>
+            <h3>A Timeless Land Where Majestic History, Vibrant Culture, and Pristine Nature Unite to Create an Unforgettable Experience</h3>
         </div>
     </div>
   )

@@ -23,7 +23,7 @@ const NavBar = () => {
         <ul>
             {
             ["about","translator","visiting"].map((item) =>(
-              <li key={`link-${item}`}>
+              <li key={`link-${item}`} onClick={() => scrollToSection(item)}>
                 <ScrollLink
                   // activeClass="active"
                   to={item}
@@ -32,9 +32,8 @@ const NavBar = () => {
                   offset={1}
                   duration={700}
                 >
-                  <a href="#" onClick={() => scrollToSection(item)}>
+        
                   {item}
-                  </a>
                 </ScrollLink>
               </li>
               
