@@ -17,6 +17,7 @@ function Translator() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [inputIntro, setInputIntro] = useState("Enter your hindi sentence here...");
   const [selectedOption, setSelectedOption] = useState(1);
+  
 
   const styles = {
     fontSize: 14,
@@ -49,7 +50,7 @@ function Translator() {
     try {
       setLoading(true);
       setError("");
-      console.log("Selected Option in predict fucntion:", selectedOption);
+      // console.log("Selected Option in predict fucntion:", selectedOption);
       const response = await axios.post("http://127.0.0.1:5000/predict", {
         hindiSentence: hindiSentence,
         selectedOption: selectedOption
@@ -159,7 +160,7 @@ function Translator() {
   }, []);
 
   return (
-    <div className="app__translator">
+    <div className="app__translator" id="translator">
       <div className="translator_heading">
         <h3>{displayedText}</h3>
       </div>

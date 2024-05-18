@@ -102,7 +102,7 @@ const Visting = () => {
 
 
   return (
-    <div className='app_visiting'>
+    <div className='app_visiting' id='visiting'>
       <div className="overlay"></div>
       {/* <div className="background_img">
         <img src={bg} alt="" /> 
