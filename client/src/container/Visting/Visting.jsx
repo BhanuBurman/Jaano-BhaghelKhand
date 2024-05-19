@@ -11,8 +11,8 @@ import img9 from '../../assets/img9.jpg'
 import img10 from '../../assets/img10.jpg'
 // import img1 from '../../assets/img1.jpg'
 import './Visiting.scss';
-import { FaArrowAltCircleRight } from "react-icons/fa";
-import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaGreaterThan } from "react-icons/fa6";
+import { FaLessThan } from "react-icons/fa6";
 
 import bg from "../../assets/background1.jpg"
 
@@ -23,7 +23,7 @@ const Visting = () => {
     height: "2rem",
     // margin: "5px",
     cursor:"pointer",
-    color: "darkblue"
+    color: "#747474e9"
   }
 
   // Slider section
@@ -109,7 +109,7 @@ const Visting = () => {
       </div> */}
       <div className="visiting_card">
         <div className="prev_btn">
-          <FaArrowAltCircleLeft onClick={handlePrevious}  style={style}/>
+          <FaLessThan  onClick={handlePrevious}  style={style}/>
         </div>
         <div className="image_section">
           <img src={images[currSliderIndex].src} alt="Slider" />
@@ -124,7 +124,7 @@ const Visting = () => {
           <a href={images[currSliderIndex].readMoreURL} target="_blank" rel="noopener noreferrer" className="read_more_btn">Read more</a>
           </div>
         <div className="next_btn">
-          <FaArrowAltCircleRight onClick={handleNext} style={style}/>
+          <FaGreaterThan onClick={handleNext} style={style}/>
         </div>
       </div>
     </div>

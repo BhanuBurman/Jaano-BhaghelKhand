@@ -1,5 +1,5 @@
-.app__navbar{
-    padding: 0px;
+.app__navbar {
+    padding: 0;
     display: flex;
     border-bottom: 1px solid rgb(150, 150, 150);
     align-items: center;
@@ -10,38 +10,60 @@
     z-index: 3;
     font-size: larger;
     font-weight: bold;
-    .logo_section{
+  
+    .logo_section {
+      cursor: pointer;
+      display: flex;
+      border-right: 1px solid rgb(150, 150, 150);
+  
+      p {
+        padding-right: 12px;
+      }
+  
+      img {
+        padding-left: 12px;
+        height: 4rem;
+        align-content: center;
+      }
+    }
+  
+    ul {
+      display: flex;
+  
+      li {
+        justify-content: center;
+        align-content: center;
+        border-left: 1px solid rgb(150, 150, 150);
+        height: 4rem;
+        list-style: none;
+        padding: 0 22px;
+        transition: all 0.5s ease-in-out;
         cursor: pointer;
-        display: flex;
-        border-right: 1px solid rgb(150, 150, 150);
-        p{
-            padding-right:12px;
+  
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.208);
         }
-        img{
-            padding-left: 12px;
-            height: 4rem;
-            align-content: center;
-
-        }
+      }
     }
-    ul{
-        // border: 2px solid red;
-        display: flex;
-        // height: 100%;
-        li{
-            
-            justify-content: center;
-            align-content: center;
-            border-left: 1px solid rgb(150, 150, 150);
-            height: 4rem;
-            list-style: none;
-            padding: 0 22px;
-            transition: all 0.5s ease-in-out;
-            cursor: pointer;
-            &:hover{
-                background-color: rgba(255, 255, 255, 0.208);
-                // z-index: 0;
-            }
-        }
-    }
-}
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ebe4e4;
+    color: rgb(21, 21, 21);
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+    box-shadow: 1px 1px 5px 1px rgb(153, 153, 153);
+  }
+  
+  .scroll-to-top:hover {
+    background-color: rgb(206, 206, 206);
+    transform: scale(1.1);
+  }
+  
