@@ -13,7 +13,7 @@ import "./Footer.scss"
 
 const Footer = () => {
   return (
-    <div className='app__footer'>
+    <div className='app__footer' id='Contact Us'>
       <div className='copyright'>
         Copyright &#169;2024 Jano Baghelkhand
       </div>

@@ -39,7 +39,7 @@ const NavBar = () => {
         <p>Baghel Khand</p>
       </div>
       <ul>
-        {["about", "translator", "visiting"].map((item) => (
+        {["About", "Translator", "Visiting","Contact Us"].map((item) => (
           <li key={`link-${item}`} onClick={() => scrollToSection(item)}>
             <ScrollLink
               to={item}

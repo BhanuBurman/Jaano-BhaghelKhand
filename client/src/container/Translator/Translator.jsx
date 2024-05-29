@@ -160,7 +160,7 @@ function Translator() {
   }, []);
 
   return (
-    <div className="app__translator" id="translator">
+    <div className="app__translator" id="Translator">
       <div className="translator_heading">
         <h3>{displayedText}</h3>
       </div>
